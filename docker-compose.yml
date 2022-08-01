@@ -1,0 +1,10 @@
+version: '3'
+services:
+  nano_portfolio_overview:
+    build: .
+    container_name: nano_portfolio_overview
+    restart: unless-stopped
+    ports:
+     - '127.0.0.1:3021:5000'
+    volumes:
+    - ./data:/app/data
